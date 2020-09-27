@@ -9,6 +9,7 @@
 import UIKit
 import XLPagerTabStrip
 class ViewController: ButtonBarPagerTabStripViewController {
+    var isReload = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,10 @@ class ViewController: ButtonBarPagerTabStripViewController {
          
              let child_8 = ScondViewController(itemInfo: "View 4")
 
-           
+           guard isReload else {
+                      return [ child_2, child_4,  child_6,  child_8]
+                  }
+
              var childViewControllers = [child_2,  child_4,child_6, child_8]
 
              for index in childViewControllers.indices {
@@ -41,7 +45,7 @@ class ViewController: ButtonBarPagerTabStripViewController {
              return Array(childViewControllers.prefix(Int(nItems)))
     }
     override func reloadPagerTabStripView() {
-        
+          isReload = true
            if arc4random() % 2 == 0 {
                pagerBehaviour = .progressive(skipIntermediateViewControllers: arc4random() % 2 == 0, elasticIndicatorLimit: arc4random() % 2 == 0 )
            } else {

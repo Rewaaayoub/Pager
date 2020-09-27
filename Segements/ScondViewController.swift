@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
-class ScondViewController: UIViewController {
+import XLPagerTabStrip
+class ScondViewController: UIViewController ,IndicatorInfoProvider{
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -40,5 +40,14 @@ class ViewController: ButtonBarPagerTabStripViewController {
              let nItems = 1 + (arc4random() % 8)
              return Array(childViewControllers.prefix(Int(nItems)))
     }
+    override func reloadPagerTabStripView() {
+        
+           if arc4random() % 2 == 0 {
+               pagerBehaviour = .progressive(skipIntermediateViewControllers: arc4random() % 2 == 0, elasticIndicatorLimit: arc4random() % 2 == 0 )
+           } else {
+               pagerBehaviour = .common(skipIntermediateViewControllers: arc4random() % 2 == 0)
+           }
+           super.reloadPagerTabStripView()
+       }
 }
 

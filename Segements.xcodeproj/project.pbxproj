@@ -15,6 +15,7 @@
 		044C73812520FA8C00EEB33E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044C737F2520FA8C00EEB33E /* LaunchScreen.storyboard */; };
 		044C73892520FEDD00EEB33E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C73882520FEDD00EEB33E /* FirstViewController.swift */; };
 		044C738B2520FF0700EEB33E /* ScondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C738A2520FF0700EEB33E /* ScondViewController.swift */; };
+		044C738D252103B300EEB33E /* ReloadExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C738C252103B200EEB33E /* ReloadExampleViewController.swift */; };
 		E8417945D907AB03A8519233 /* Pods_Segements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA9D23C273BD761FA0B83A9 /* Pods_Segements.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		044C73822520FA8C00EEB33E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		044C73882520FEDD00EEB33E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		044C738A2520FF0700EEB33E /* ScondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScondViewController.swift; sourceTree = "<group>"; };
+		044C738C252103B200EEB33E /* ReloadExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadExampleViewController.swift; sourceTree = "<group>"; };
 		2EA9D23C273BD761FA0B83A9 /* Pods_Segements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Segements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62873CC38EF5A412DEBCA91 /* Pods-Segements.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segements.release.xcconfig"; path = "Target Support Files/Pods-Segements/Pods-Segements.release.xcconfig"; sourceTree = "<group>"; };
 		B7867AA7FE8827E26CBE4572 /* Pods-Segements.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segements.debug.xcconfig"; path = "Target Support Files/Pods-Segements/Pods-Segements.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				044C73822520FA8C00EEB33E /* Info.plist */,
 				044C73882520FEDD00EEB33E /* FirstViewController.swift */,
 				044C738A2520FF0700EEB33E /* ScondViewController.swift */,
+				044C738C252103B200EEB33E /* ReloadExampleViewController.swift */,
 			);
 			path = Segements;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				044C738B2520FF0700EEB33E /* ScondViewController.swift in Sources */,
 				044C73752520FA8200EEB33E /* AppDelegate.swift in Sources */,
 				044C73772520FA8200EEB33E /* SceneDelegate.swift in Sources */,
+				044C738D252103B300EEB33E /* ReloadExampleViewController.swift in Sources */,
 				044C73892520FEDD00EEB33E /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

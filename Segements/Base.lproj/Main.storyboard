@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2Oz-L6-EzT" customClass="ButtonBarView" customModule="XLPagerTabStrip">
-                                <rect key="frame" x="16" y="60" width="382" height="70"/>
+                                <rect key="frame" x="16" y="413" width="382" height="70"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="uEk-0m-XHh"/>
@@ -30,10 +30,11 @@
                                 <cells/>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2Oz-L6-EzT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9xY-Pl-wvg"/>
-                            <constraint firstItem="2Oz-L6-EzT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Mh3-ns-t0H"/>
+                            <constraint firstItem="2Oz-L6-EzT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="B3c-Fs-EA8"/>
+                            <constraint firstItem="2Oz-L6-EzT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ozT-60-R0t"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Oz-L6-EzT" secondAttribute="trailing" constant="16" id="tcu-Uo-B3Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -72,6 +73,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2o-B2-BZV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1519" y="84"/>
+        </scene>
+        <!--Buttons Example-->
+        <scene sceneID="4KL-H5-En0">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="LDo-r9-s8Q" customClass="ReloadExampleViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r0B-dc-cF6"/>
+                        <viewControllerLayoutGuide type="bottom" id="YhK-eb-Nta"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bCA-9o-5Kp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kx7-nH-ohc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YhK-eb-Nta" firstAttribute="top" secondItem="Kx7-nH-ohc" secondAttribute="bottom" id="OYo-LC-WB5"/>
+                            <constraint firstItem="Kx7-nH-ohc" firstAttribute="top" secondItem="r0B-dc-cF6" secondAttribute="bottom" id="b44-eN-98G"/>
+                            <constraint firstItem="Kx7-nH-ohc" firstAttribute="leading" secondItem="bCA-9o-5Kp" secondAttribute="leading" id="d72-96-swv"/>
+                            <constraint firstAttribute="trailing" secondItem="Kx7-nH-ohc" secondAttribute="trailing" id="hNC-wY-Gg3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="S1W-5n-IXU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Buttons Example" id="51o-2R-RQW">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="OHk-U6-VpB">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="reloadTapped:" destination="LDo-r9-s8Q" id="KTz-6O-uGS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xe0-JL-aqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2068" y="526"/>
         </scene>
     </scenes>
 </document>

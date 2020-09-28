@@ -27,7 +27,15 @@ class FirstViewController: UIViewController,IndicatorInfoProvider {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let label = UILabel()
+              label.translatesAutoresizingMaskIntoConstraints = false
+              label.text = "XLPagerTabStrip"
 
+              view.addSubview(label)
+              view.backgroundColor = .white
+
+              view.addConstraint(NSLayoutConstraint(item: label, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0))
+              view.addConstraint(NSLayoutConstraint(item: label, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: -50))
         // Do any additional setup after loading the view.
     }
     

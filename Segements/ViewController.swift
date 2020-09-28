@@ -16,7 +16,7 @@ class ViewController: ButtonBarPagerTabStripViewController {
         // Do any additional setup after loading the view.
         
         buttonBarView.selectedBar.backgroundColor = .orange
-        buttonBarView.backgroundColor = .cyan
+        buttonBarView.backgroundColor = .none
     }
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
        

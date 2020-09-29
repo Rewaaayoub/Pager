@@ -16,12 +16,13 @@ class ViewController: ButtonBarPagerTabStripViewController {
         // Do any additional setup after loading the view.
         
         buttonBarView.selectedBar.backgroundColor = .orange
-        buttonBarView.backgroundColor = .none
+        buttonBarView.backgroundColor = .white
+       
     }
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
        
              let child_2 = FirstViewController(itemInfo: "View")
-            
+  
              let child_4 = ScondViewController(itemInfo: "View 2")
           
              let child_6 = FirstViewController(itemInfo: "View 3")
